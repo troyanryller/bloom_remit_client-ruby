@@ -82,6 +82,18 @@ module BloomRemitClient
       Responses::Recipients::Create.new(raw_response: raw_response)
     end
 
+    # GET
+    # /api/v1/partners/:api_token/senders/:sender_id/remittances/:id
+    # Parameters:
+    #   sender_id: Required
+    #   id: or remittance_id: Required
+    def remittance(params = {})
+      params[:remittance_id] ||= params.delete(:id)
+      request_params = params.merge(access_params)
+      raw_response = Requests::Remittances::Show.call!(request_params)
+      Responses::Remittances::Show.new(raw_response: raw_response)
+    end
+
     def create_remittance(remittance_params={})
       params = {remittance: remittance_params}.
         merge(sender_id: remittance_params[:sender_id]).
