@@ -45,7 +45,7 @@ require "bloom_remit_client/responses/remittances/calculate"
 
 module BloomRemitClient
   PRODUCTION = 'api.bloom.solutions'
-  STAGING = 'bloomremit-staging.herokuapp.com'
+  STAGING = 'staging.bloomremit.net'
 
   class << self
     attr_accessor :host
