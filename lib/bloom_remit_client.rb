@@ -44,7 +44,7 @@ require "bloom_remit_client/responses/recipients/create"
 require "bloom_remit_client/responses/remittances/calculate"
 
 module BloomRemitClient
-  PRODUCTION = 'api.bloom.solutions'
+  PRODUCTION = 'www.bloomremit.net'
   STAGING = 'staging.bloomremit.net'
 
   class << self
