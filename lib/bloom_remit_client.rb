@@ -7,6 +7,7 @@ require 'active_support/core_ext/object/try'
 require 'bloom_remit_client/coercers/indifferent_hash'
 require 'bloom_remit_client/coercers/path'
 require 'bloom_remit_client/concerns/has_base_authentification'
+require 'bloom_remit_client/concerns/has_v2_api_methods'
 require "bloom_remit_client/version"
 require "bloom_remit_client/client"
 require "bloom_remit_client/models/biller"
@@ -23,6 +24,7 @@ require "bloom_remit_client/requests/base"
 require "bloom_remit_client/requests/credit/list"
 require "bloom_remit_client/requests/credit/history"
 require "bloom_remit_client/requests/rate/show"
+require "bloom_remit_client/requests/v2/rate/show"
 require "bloom_remit_client/requests/billers/list"
 require "bloom_remit_client/requests/deposit_strategies/list"
 require "bloom_remit_client/requests/senders/create"

@@ -3,6 +3,7 @@ module BloomRemitClient
   class Client
     include Virtus.model
     include ActiveModel::Validations
+    include Concerns::HasV2ApiMethods
 
     attribute :api_token, String
     attribute :api_secret, String
