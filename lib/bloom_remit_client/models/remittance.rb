@@ -15,6 +15,7 @@ module BloomRemitClient
     attribute :forex_margin, Float
     attribute :account_name, String
     attribute :account_number, String
+    attribute :tracking_number, String
     attribute :callback_url, String
     attribute :sender_id, String
 
